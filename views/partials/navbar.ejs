@@ -1,0 +1,30 @@
+<nav
+	class="navbar 
+		shadow-sm
+		p-3
+		mb-2
+		"
+>
+	<div class="container-fluid">
+		<div class="mx-auto">
+					<a class="mx-1 <%= url === "/" ? 'active':'' %>" id="nav-link" aria-current="page" href="/">Home</a>
+					<a class="mx-1 <%= url === "/portfolio" ? 'active':'' %>" id="nav-link" href="/portfolio">Portfolio</a>
+					<a class="mx-1 <%= url === "/contact" ? 'active':'' %>" id="nav-link" href="/contact">Contact</a>
+					
+		</div>
+		
+	</div>
+	
+</nav>
+<div class="container-fluid">
+<nav class="col-4 position-fixed top-50 bottom-50 d-lg-block d-none">
+	<ul class="">
+		<li class="mb-4 mx-1">
+			<a href="" class="icon-link"><i data-feather="linkedin"></i></a>
+		</li>
+		<li class="mb-4 mx-1">
+			<a href="" class="icon-link"><i data-feather="github"></i></a>
+		</li>
+	</ul>
+</nav>
+</div>

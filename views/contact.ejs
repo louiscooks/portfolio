@@ -1,0 +1,55 @@
+<% layout('layouts/boilerplate') %>
+<form class="container needs-validation" action="/contact" method="POST" novalidate>
+		<section class="col-lg-8 offset-lg-2 p-2" style="margin-bottom: 60px;">
+			<div class="text-center mb-5">
+				<h1 class="mb-3 fs-1">Contact</h1>
+				<p class="lead p-2 fs-5">
+					If you would like to get in touch, talk to me about a project collaboration or just say hi,
+fill up the awesome form below or send an email to 
+<a href="email:louishdona@gmail.com" class="">louisdhona@gmail.com</a>
+				</p>
+			</div>
+			<div class="row g-2 mb-3">
+				<div class="col-12 col-lg-6 mb-3">
+					<label for="name" class="form-label">Name</label>
+					<input
+						type="text"
+						class="form-control"
+						id="name"
+						placeholder="Full name"
+                        name="name"
+						required
+					/>
+				</div>
+				<div class="col-12 col-lg-6 mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input
+						type="email"
+						class="form-control"
+						id="email"
+						placeholder="example@gmail.com"
+                        name="from"
+						required
+					/>
+				</div>
+			</div>
+			<div class="form-floating mb-3">
+				<textarea
+					class="form-control h-100 py-5"
+					placeholder="Leave a message here"
+					id="message"
+                    name="text"
+					required
+					style="height: 100px"
+				></textarea>
+				<label for="message">Message</label>
+			</div>
+			<button
+				class="btn btn-md text-center send-button"
+				style="width: 100%"
+			>
+				Send Message
+			</button>
+		</div>
+		</section>
+</form>

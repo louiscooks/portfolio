@@ -1,0 +1,19 @@
+<div
+	class="col-lg-8 col-12 offset-lg-2 text-center position-absolute flash-banner"
+>
+	<% if(success && success.length){ %>
+	<div class="flash-success p-2">
+		<div class="float-end">
+			<i data-feather="x" class="flash-close"></i>
+		</div>
+		<div><%= success %></div>
+	</div>
+	<% } %> <% if(error && error.length){ %>
+	<div class="flash-error p-2">
+		<div class="float-end">
+			<i data-feather="x" class="flash-close"></i>
+		</div>
+		<div><%= error %></div>
+	</div>
+	<% } %>
+</div>
