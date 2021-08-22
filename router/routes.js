@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const sanitizeHtml = require("sanitize-html");
 const sendMail = require("../config/nodemailer");
 const Message = require("../utils/Message");
 router.get("/", (req, res) => {
@@ -12,10 +13,12 @@ router.get("/contact", (req, res) => {
 	res.render("contact");
 });
 router.post("/contact", (req, res) => {
-	const { name, from, text } = req.body;
+	let { name, from, text } = req.body;
+	name = sanitizeHtml(name);
+	text = sanitizeHtml(text);
 	const message = new Message(name, from, text);
 	sendMail(message, req, res);
-	//redirecting in sendMail callback
+	// redirecting in sendMail callback
 });
 
 module.exports = router;
