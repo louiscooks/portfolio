@@ -4,6 +4,7 @@ $(function () {
 	$(".box-1").slideDown(400);
 	$(".box-2").slideDown(600);
 	$(".box-3").slideDown(800);
+	$(".box-4").slideDown(1000);
 
 	for (let i = 1; i < 5; i++) {
 		$(".hover-event" + i).hover(
