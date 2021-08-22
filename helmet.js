@@ -14,7 +14,13 @@ module.exports.contentSecurity = helmet.contentSecurityPolicy({
 		workerSrc: ["'self'", "blob:"],
 		childSrc: ["blob:"],
 		objectSrc: [],
-		imgSrc: ["'self'", "blob:", "data:", "https://images.unsplash.com"],
+		imgSrc: [
+			"'self'",
+			"blob:",
+			"data:",
+			"https://images.unsplash.com",
+			"https://res.cloudinary.com"
+		],
 		fontSrc: ["'self'", ...fontSrcUrls]
 	}
 });
