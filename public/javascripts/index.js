@@ -5,7 +5,7 @@ $(function () {
 	$(".box-2").slideDown(600);
 	$(".box-3").slideDown(800);
 
-	for (let i = 1; i < 4; i++) {
+	for (let i = 1; i < 5; i++) {
 		$(".hover-event" + i).hover(
 			function () {
 				$(".drop-list" + i)

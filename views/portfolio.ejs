@@ -1,10 +1,10 @@
 <% layout('layouts/boilerplate') %>
-<section class="px-3 mb-3 col-12 col-lg-8 offset-lg-2" style="height:calc(100vh - 60px);">
+<section class="px-3 col-12 col-xl-10 offset-xl-1" style="height:calc(100vh - 60px);">
 	<div class="mb-3">
 		<h2>Web developer portfolio</h2>
 		<p>Check out my latest software development projects.</p>
 	</div>
-	<div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 g-2 justify-content-center">
+	<div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-2 ">
 		<div class="col box-1" style="display:none;">
 			<div class="card">
 				<div class="card-body p-2 hover-event1">
@@ -16,11 +16,10 @@
 					/>
                     
 					<h5 class="card-title text-center">Neighborhood</h5>
-					<p class="card-text mb-3 mb-md-2"><span class="mb-1 fw-bold">About</span> <br>
+					<p class="card-text mb-2"><span class="mb-1 fw-bold">About</span> <br>
 					A yelp clone website that allows users to leave reviews on local businesses. Users can create, update, and delete businesses.</p>
-					<p class="card-text drop-list1 mb-2" style="display:none">
-						<span class="mb-1 fw-bold">Technologies</span> <br />
-						<ul class="ms-3 ps-2 row row-cols-md-3 row-cols-2 drop-list1" style="font-size: 14px; list-style: circle; display:none;">
+						<p class=" drop-list1 mb-1 fw-bold p-0" style="display: none;">Technologies</p>
+						<ul class="ms-3 ps-2 row row-cols-xl-3 row-cols-2 drop-list1 mb-2" style="font-size: 14px; list-style: circle; display:none;">
                             <li class="col">HTML</li>
                             <li class="col">CSS</li>
                             <li class="col">Javascript</li>
@@ -32,9 +31,9 @@
                            <li class="col">Mapbox</li>
                            <li class="col">Heroku</li>
                         </ul>
-					</p>
-					<div class=" drop-list1 float-center mb-1 mt-2" style="display: none;">
-					<a href="https://fierce-bastion-13435.herokuapp.com/" class="btn btn-success btn-md w-100" >View Site</a>
+					<div class=" drop-list1 float-center mb-1" style="display: none;">
+						<a href="https://fierce-bastion-13435.herokuapp.com/" class="btn btn-success btn-md w-100 mb-1" >View Site</a>
+						<a href="https://github.com/louiscooks/neighborhood" class="btn btn-primary btn-md w-100" >GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -51,12 +50,12 @@
 					/>
                     
 					<h5 class="card-title text-center">Chef Vicky's Kitchen</h5>
-					<p class="card-text mb-1"><span class="mb-1 fw-bold">About</span> <br>
-					An online resturant that focuses on delivery. Users can view the menu, place an order, view their order status and keep track of their order history
+					<p class="card-text mb-2"><span class="mb-1 fw-bold">About</span> <br>
+					An online resturant that focuses on delivery. Users can view the menu, place an order, view their order status and keep track of their order history.
 				</p>
-					<p class="card-text drop-list2 mb-1" style="display:none">
-						<span class="mb-2 fw-bold">Technologies</span> <br />
-						<ul class="ms-3 ps-2 row row-cols-md-3 row-cols-2 drop-list2" style="font-size: 14px; list-style: circle; display:none;">
+					<p class="card-text drop-list2 mb-2" style="display:none">
+						<span class="mb-1 fw-bold">Technologies</span> <br />
+						<ul class="ms-3 ps-2 row row-cols-xl-3 row-cols-2 drop-list2 mb-2" style="font-size: 14px; list-style: circle; display:none;">
                             <li class="col">HTML</li>
                             <li class="col">CSS</li>
                             <li class="col">Javascript</li>
@@ -66,12 +65,12 @@
                            <li class="col">Bootstrap</li>
                            <li class="col">Cloudinary</li>
                            <li class="col">Mapbox</li>
-                           <li class="col">Nodemailer</li>
                            <li class="col">Heroku</li>
                         </ul>
 					</p>
-					<div class=" drop-list2 float-center mb-1 mt-2" style="display: none;">
-					<a href="https://cryptic-gorge-35723.herokuapp.com/" class="btn btn-success btn-md w-100" >View Site</a>
+					<div class=" drop-list2 float-center mb-1" style="display: none;">
+						<a href="https://cryptic-gorge-35723.herokuapp.com/" class="btn btn-success btn-md w-100 mb-1" >View Site</a>
+						<a href="https://github.com/louiscooks/chefVickysKitchen" class="btn btn-primary btn-md w-100" >GitHub</a>
 					</div>
 				</div>
 			</div>
@@ -88,32 +87,66 @@
 					/>
                     
 					<h5 class="card-title text-center">Kay Alex</h5>
-					<p class="card-text mb-1"><span class="mb-1 fw-bold">About</span> <br>
-					An online store that users can place view the menu, place orders, and contact the business using a form. <span class="fw-lighter fst-italic">(in progress)</span></p>
-					<p class="card-text drop-list3 mb-1" style="display:none">
-						<span class="mb-2 fw-bold">Technologies</span> <br />
-						<ul class="ms-3 ps-2 row row-cols-md-3 row-cols-2 drop-list3" style="font-size: 14px; list-style: circle; display:none;">
+					<p class="card-text mb-2"><span class="mb-1 fw-bold">About</span> <br>
+					An online store that users can place view the menu, place orders, and contact the business using a form.<br><span class="fw-lighter fst-italic">(in progress)</span></p>
+					<p class="card-text drop-list3 mb-2" style="display:none">
+						<span class="mb-1 fw-bold">Technologies</span> <br />
+						<ul class="ms-3 ps-2 row row-cols-lg-3 row-cols-2 drop-list3 mb-2" style="font-size: 14px; list-style: circle; display:none;">
                             <li class="col">HTML</li>
                             <li class="col">CSS</li>
                             <li class="col">Javascript</li>
-                            <li class="col">Jquery</li>
                             <li class="col">Node.js</li>
                            <li class="col">Express</li>
+                           <li class="col">JQuery</li>
+                           <li class="col">Bootstrap</li>
                            <li class="col">MySQL</li>
+                           <li class="col">Heroku</li>
+                        </ul>
+					</p>
+					<div class=" drop-list3 float-center mb-1" style="display: none;">
+						<a href="" class="btn btn-success btn-md w-100 mb-1" >View Site</a>
+						<a href="https://github.com/louiscooks/kayAlex" class="btn btn-primary btn-md w-100" >GitHub</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="col box-3" style="display:none;">
+			<div class="card">
+				<div class="card-body p-2 hover-event4">
+                   
+					<img
+						src="https://images.unsplash.com/photo-1545670723-196ed0954986?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+						class="card-img-top mb-1 w-100"
+						alt="..."
+					/>
+                    
+					<h5 class="card-title text-center">portfolio</h5>
+					<p class="card-text mb-2"><span class="mb-1 fw-bold">About</span> <br>
+					A platform to showcase projects I have worked/working on.</p>
+					<p class="card-text drop-list4 mb-2" style="display:none">
+						<span class="mb-1 fw-bold">Technologies</span> <br />
+						<ul class="ms-3 ps-2 row row-cols-lg-3 row-cols-2 drop-list4 mb-2" style="font-size: 14px; list-style: circle; display:none;">
+                            <li class="col">HTML</li>
+                            <li class="col">CSS</li>
+                            <li class="col">Javascript</li>
+                            <li class="col">Node.js</li>
+                           <li class="col">Express</li>
+                           <li class="col">JQuery</li>
                            <li class="col">Bootstrap</li>
                            <li class="col">Heroku</li>
                         </ul>
 					</p>
-					<div class=" drop-list3 float-center mb-1 mt-2" style="display: none;">
-					<a href="" class="btn btn-success btn-md w-100" >View Site</a>
+					<div class=" drop-list4 float-center mb-1 mt-2" style="display: none;">
+						<a href="" class="btn btn-success btn-md w-100 mb-2" >View Site</a>
+						<a href="https://github.com/louiscooks/portfolio" class="btn btn-primary btn-md w-100" >GitHub</a>
 					</div>
 				</div>
 			</div>
-		</div>
-		
+		</div>	
 	</div>
-    <div class=" mb-3">
+	<div class=" text-center mt-3">
 <h2>Lets Talk</h2>
 <p>Feel free to contact me using the form at the <a href="">contact page</a></p>
     </div>
 </section>
+
